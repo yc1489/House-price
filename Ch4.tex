@@ -1,0 +1,100 @@
+\documentclass[12pt,a4paper,hyperref]{article}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+	\definecolor{ultramarine}{rgb}{0.07, 0.04, 0.56}
+\usepackage{amsmath, natbib, latexsym, array, amssymb,longtable,float, graphicx, appendix,lscape,diagbox,textcomp,placeins}
+\usepackage[colorlinks,
+            linkcolor=ultramarine,
+            anchorcolor=green,
+            citecolor=darkblue
+            ]{hyperref}
+\usepackage[flushleft]{threeparttable}
+\usepackage[top=2.7cm, left=3cm, right=3cm, bottom=2.7cm]{geometry}
+\usepackage{hyperref}
+\newtheorem{myDef}{Definition}
+\newtheorem{myTheo}{Theorem}
+\newtheorem{myProp}{proposition}
+\newtheorem{myRem}{Remark}
+\newtheorem{myAssu}{Assumption}
+\newtheorem{myCor}{Corollary}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+\urlstyle{same}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{pgfplotstable}
+\sisetup{
+  round-mode          = places, % Rounds numbers
+  round-precision     = 2, % to 2 places
+}
+
+\newenvironment{sequation}{\begin{equation}\tiny}{\end{equation}}
+\DeclareMathOperator*{\plim}{plim}
+\renewcommand{\floatpagefraction}{0.60}
+\renewcommand{\appendixpagename}{\Large Appendix}
+\setcounter{secnumdepth}{3}
+\begin{document}
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+
+
+\HRule \\[0.4cm]
+{ \normalsize \bfseries A revisit to volatility puzzles of house price: evident from 16 advanced economies}\\[0.2cm] % Title of your document
+\HRule \\[1.5cm]
+
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+\section{Introduction}
+Does house price driven by income, monetary policy and credit etc.$?$
+If so, do these financial factors share the same influence across different countries$?$
+Are there comovement of house prices across countries? If there is no comovement across countries, could we earn consistent returns by a geographically diversified portfolio$?$  And how to link these financial factors to house market$?$
+Above these questions are hard to answer because there are heterogeneity in economics across countries.
+
+In this study, we would like to investigate the volatility puzzles of house price and try to give reasonable explanation. Honestly, to get the long run house price data across countries is quite hard. \citet{Jorda:2019} have an excellent work to construct a long time period house price data. In this study, we would use JORDA SCHULARICK TAYLOR MACROHISTORY DATABASE to investigate the link between house market and financial market across $16$ advanced economies from $1870$ to $2016$. By this long time period data, we could know more complete behavior of house market and financial market.
+
+
+In \citet{Jorda:2019}, they find the housing return are similar to equity return but less volatiles in the long run, which means the sharp ratio of housing are higher than equity. \citet{Liu:2013} construct the DSGE model to capture the positive co-movements between land price and business investment. Due to low volatiles and high rental yield on real estate, firms prefer to buy real estate as collateral asset. The volatility of land price has the main $(80\%)$ and direct effects on the global house boom.
+
+
+
+\citet{Jorda:2015} mortgage borrowing and the home ownership rates significantly increase after the WW2. In $2010$, the mortgage credit approached $70\%$ of GDP. In this period, we can see house price sharply increase. Interestingly , the house price data shows that the house price is stable before the mid of $20th$
+
+
+Stay in the low interest rate (interest rate $<$ growth rate) is good for the government to reduce the debt burden, but it may cause house market and financial market instability. Duo to the real estate has become the dominant the business model of banks. Low interest rate environment might cause the house price boom and loose the mortgage credit. Therefore, the financial instability risk might become large.
+In the other hand, the low interest rate might driven asset pricing leave the fundamental. But, it does not imply that the tighter monetary conditions are the right answers.
+
+There are many researches to discuss the relationship between house price and income. \citet{Sean:2010} find that the house price and income has a cointegration in the US. In \citet{Knoll:2017}, they find the house price significantly increase, but have the lagged real income growth. Across the countries, the house price to the real income have a large volatiles. Due to heterogeneity in economics, we would like to apply dynamic heterogeneous panel data model.
+
+
+\section{The econometrics model}
+\begin{align}
+p_{it}=\alpha_{i}+\phi_{i} p_{t-1}+\beta_{1i}y_{i,t}+ \beta_{2i}I_{it}+\beta_{3i} r_{it}+\beta_{4i} m_{i,t}+u_{it},
+\end{align}
+where $p_{it}$ is the real price of housing in $i$ country and year $t$, $y_{i,t}$ is real GDP per capita, $I_{it}$ is investment to GDP ratio, $r_{it}$ is short term interest rate, and $m_{i,t}$  is mortgage loans to non financial private sector.
+In this study we investigate 16 advanced economics over the year 1870 to 2016
+
+
+\addcontentsline{toc}{section}{Reference}
+\renewcommand\refname{References}
+\bibliographystyle{chicago}
+\bibliography{2}
+
+
+
+
+\end{document}  \href{*}{*} 
